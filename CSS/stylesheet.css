@@ -101,7 +101,7 @@ a:hover, a:active {
   }
 /*Indtil her*/
 
-/*Følgende kode hentet fra: https://www.w3schools.com/css/tryit.asp?filename=trycss_css_image_overlay_fade*/
+/*Følgende kode (med enkelte modifikationer) hentet fra: https://www.w3schools.com/css/tryit.asp?filename=trycss_css_image_overlay_fade*/
 .overlay {
     position: absolute;
     top: 0;
