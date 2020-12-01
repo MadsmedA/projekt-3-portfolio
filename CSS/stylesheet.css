@@ -1,6 +1,13 @@
 * {box-sizing: border-box;}
 
+body {
+    background-color: #F2EFEB;
+    max-width: 1080px;
+}
+
 nav {
+    grid-area: nav;
+    
     display: flex;
     justify-content: space-between;
 }
@@ -11,18 +18,20 @@ img {
     object-fit: cover;
 }
 
-body {
-    background-color: #F2EFEB;
-    max-width: 1000px;
-}
-
 hr {
-    border-top: 2px solid #525A33;
+    border: 1px solid #525A33;
+    margin: 5px auto;
 }
 
 h1, h2, p {
     color: #525A33;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    display: grid;
+    grid-template-areas: "logo nav";
+
 }
 
 #logo {
@@ -32,13 +41,30 @@ h1, h2, p {
 
 #selected {
     width: 48%;
-    height: auto;
+    height: 50px;
     background-color: #525A33;
     text-align: center;
 }
 
+.logo {
+    max-width: 250px;
+    grid-area: logo;
+}
+
+.wrapper {
+    width: 75%;
+}
+
 .selected {
     color: #E8E2D8;
+}
+
+.show {
+    display: block;
+}
+
+.hidden {
+    display: none;
 }
 
 .center {
@@ -50,8 +76,14 @@ h1, h2, p {
     padding-top: 15px;
 }
 
+.projekter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .projekt {
-    width: 100%;
+    width: 49%;
     height: 150px;
     position: relative;
     margin-top: 15px;
@@ -64,7 +96,7 @@ h1, h2, p {
 }
 
 .nav-item {
-    width: 48%;
+    width: 50%;
     height: 50px;
     background-color: #E8E2D8;
 }
@@ -129,19 +161,17 @@ a:hover, a:active {
 }
 /*Indtil her*/
 
-@media screen and (max-width: 990px) {
-    body {
-        background-color: blue;
-    }
-
-    .wrapper {
-        width: 75%;
-    }
-}
-
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 670px) {
     body {
         background-color: #F2EFEB;
+    }
+
+    header {
+        display: block;
+    }
+
+    .logo {
+        max-width: 100%;
     }
 
     .wrapper {
@@ -149,6 +179,18 @@ a:hover, a:active {
     
         display: flex;
         flex-direction: column;
+    }
+
+    .projekt {
+        width: 100%;
+    }
+
+    .show {
+        display: hidden;
+    }
+
+    .hidden {
+        display: block;
     }
 }
 
