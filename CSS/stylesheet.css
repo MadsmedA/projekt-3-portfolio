@@ -14,6 +14,10 @@ nav {
     justify-content: space-between;
 }
 
+video {
+    margin-left: 25%;
+}
+
 img {
     width: 100%;
     height: 100%;
@@ -215,6 +219,10 @@ a:hover {
         width: 100% !important;
     }
 
+    .layout {
+        width: 100% !important;
+    }
+
     .textbox {
         width: 100%;
     }
@@ -260,4 +268,20 @@ a:hover {
 @font-face {
     font-family: Gill Sans;
     src: url(typografi/gillsans.ttf);
+}
+
+/*Til div på animation.html*/
+#animation {
+	background: url(../billeder/animation/Animation-01.png) 0 0 no-repeat;
+	width: 500px;
+    height: 500px;
+    animation: play 0.5s steps(6) infinite;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@keyframes play {  
+    0% {background-position: 0px 0; }
+    100% {background-position: -3000px 0;}
 }
