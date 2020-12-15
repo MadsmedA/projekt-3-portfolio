@@ -1,37 +1,10 @@
-/*Sorteret alfabetisk efter grupperinger*/
+/*Sorteret efter grupperinger i alfabetisk orden*/
 * {box-sizing: border-box;}
 
 /*HTML tags*/
 body {
     background-color: #F2EFEB;
     max-width: 1080px;
-}
-
-nav {
-    grid-area: nav;
-    
-    display: flex;
-    justify-content: space-between;
-}
-
-video {
-    margin-left: 25%;
-}
-
-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-header {
-    display: grid;
-    grid-template-areas: "logo nav";
-}
-
-hr {
-    border-top: 2px solid #525A33;
-    margin: 5px auto;
 }
 
 h1 {
@@ -45,6 +18,33 @@ h3 {
 h1, h2, h3, p {
     color: #525A33;
     font-family: Gill Sans, Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    display: grid;
+    grid-template-areas: "logo nav";
+}
+
+hr {
+    border-top: 2px solid #525A33;
+    margin: 5px auto;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+nav {
+    grid-area: nav;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+video {
+    margin-left: 25%;
 }
 
 /*ID*/
@@ -66,77 +66,9 @@ h1, h2, h3, p {
 }
 
 /*Class*/
-.portrait {
-    width: 80%;
-}
-
-.logo {
-    max-width: 250px;
-    grid-area: logo;
-}
-
-.wrapper {
-    width: 75%;
-}
-
-.selected {
-    color: #E8E2D8;
-}
-
-.show {
-    display: block;
-}
-
-.hidden {
-    display: none;
-}
 
 .center {
     margin: auto;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.textbox {
-    width: 80%;
-}
-
-.padding {
-    padding-top: 15px;
-}
-
-.projekt-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.projekt {
-    width: 49%;
-    height: 150px;
-    position: relative;
-    margin-top: 15px;
-}
-
-.projekt-img {
-    height: auto;
-    margin-top: 15px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.nav-item {
-    width: 50%;
-    height: 50px;
-    background-color: #E8E2D8;
-}
-
-.forside-knap {
-    height: 50px;
-    background-color: #E8E2D8;
-    margin-top: 15px;
 }
 
 .footer {
@@ -147,6 +79,79 @@ h1, h2, h3, p {
 
     display: flex;
     justify-content: space-around;
+}
+
+.forside-knap {
+    height: 50px;
+    background-color: #E8E2D8;
+    margin-top: 15px;
+}
+
+.hidden {
+    display: none;
+}
+
+.logo {
+    max-width: 250px;
+    grid-area: logo;
+}
+
+.nav-item {
+    width: 50%;
+    height: 50px;
+    background-color: #E8E2D8;
+}
+
+.padding {
+    padding-top: 15px;
+}
+
+.portrait {
+    width: 80%;
+}
+
+.projekt {
+    width: 49%;
+    height: 150px;
+    position: relative;
+    margin-top: 15px;
+}
+
+.projekt-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.projekt-img {
+    height: auto;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.selected {
+    color: #E8E2D8;
+}
+
+.show {
+    display: block;
+}
+
+.textbox {
+    width: 80%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.video-width {
+    width: 50%;
+}
+
+.wrapper {
+    width: 75%;
 }
 
 /*Følgende kode (med enkelte modifikationer) hentet fra: https://www.w3schools.com/css/tryit.asp?filename=trycss_link_advanced*/
@@ -199,15 +204,20 @@ a:hover {
         display: block;
     }
 
-    .logo {
-        max-width: 100%;
+    video {
+        margin-left: 5%;
     }
 
-    .wrapper {
-        width: 75%;
-    
-        display: flex;
-        flex-direction: column;
+    .hidden {
+        display: block;
+    }
+
+    .layout {
+        width: 100% !important;
+    }    
+
+    .logo {
+        max-width: 100%;
     }
 
     .projekt {
@@ -217,21 +227,24 @@ a:hover {
     .projekt-img {
         width: 100% !important;
     }
-
-    .layout {
-        width: 100% !important;
+    
+    .show {
+        border-top: 0px;
     }
-
+    
     .textbox {
         width: 100%;
     }
 
-    .show {
-        border-top: 0px;
+    .video-width {
+        width: 100%;
     }
 
-    .hidden {
-        display: block;
+    .wrapper {
+        width: 75%;
+    
+        display: flex;
+        flex-direction: column;
     }
 }
 
