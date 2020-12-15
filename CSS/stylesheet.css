@@ -146,10 +146,6 @@ video {
     text-align: center;
 }
 
-.video-width {
-    width: 50%;
-}
-
 .wrapper {
     width: 75%;
 }
@@ -237,7 +233,7 @@ a:hover {
     }
 
     .video-width {
-        width: 100%;
+        width: 100% !important;
     }
 
     .wrapper {
