@@ -27,7 +27,6 @@ img {
 header {
     display: grid;
     grid-template-areas: "logo nav";
-
 }
 
 hr {
